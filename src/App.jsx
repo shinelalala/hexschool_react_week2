@@ -46,7 +46,7 @@ function App() {
 
   const checkUserLogin = async () => {
     try {
-      axios.post(`${BASE_URL}/v2/api/user/check`)
+      await axios.post(`${BASE_URL}/v2/api/user/check`)
       alert('使用者已登入')
     } catch (error) {
       console.error(error)
